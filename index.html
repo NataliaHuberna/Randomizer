@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Randomizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class = "container">
+
+    <header class = "header">
+      <h1>RANDOMIZER</h1>
+    </header>
+
+    <main class="main">
+      <form action="/" class="main__form" autocomplete="off">
+  
+        <div class="main__field-wrapper">
+          <label for="min" class="main__label">Enter Min value:</label>
+          <input id="min" type="number" class="main__input" placeholder="min value">
+        </div>
+    
+        <div class="main__field-wrapper">
+          <label for="max" class="main__label">Enter Max value:</label>
+          <input id="max" type="number" class="main__input" placeholder="max value">
+        </div>
+    
+        <div class="main__field-wrapper">
+          <label for="output" class="main__label">Generated number:</label>
+          <div id="output" class="main__output"></div>
+        </div>
+    
+        <div class="main__btn-wrapper">
+          <button type="button" class="main__btn reset">Reset</button>
+          <button type="button" class="main__btn generate">Generate</button>
+        </div>
+    </form>
+    </main>
+
+    <footer class = "footer"></footer>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
