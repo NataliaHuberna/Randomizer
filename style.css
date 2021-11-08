@@ -5,7 +5,7 @@
 }
 
 :root {
-  --accent-color: #6db9b9;
+  --accent-color: rgb(109, 185, 185);
 }
 
 *,
@@ -31,12 +31,12 @@ html{
 
 .header {
   text-align: center;
-  background-color: grey;
+  background-color: rgb(128, 128, 128);
 }
 
 h1 {
   font-size: 100px;
-  color: #6aadad;
+  color: rgb(106, 173, 173);
   text-shadow: rgb(3, 3, 3) 1px 1px 0   
 }
 .main {
@@ -54,7 +54,7 @@ h1 {
   background-color: #fff;
   padding: 20px;
   border-radius: 3px;
-  box-shadow: 0 5px 8px 1px #83817a;
+  box-shadow: 0 5px 8px 1px rgb(131, 129, 122);
   flex-direction: column;
 }
 
@@ -82,8 +82,8 @@ h1 {
 
 .main__output{
   padding: 5px;
-  background-color: lightblue;
-  border: 1px red dotted;
+  background-color: rgb(173, 216, 230);
+  border: 1px rgb(255, 0, 0) dotted;
   min-width: 180px;
   min-height: 30px;
 }
@@ -105,13 +105,13 @@ h1 {
   border-radius: 3px;
   cursor: pointer;
   background-color: var(--accent-color);
-  color: #fff;
+  color: rgb(255, 255, 255);
   align-self: center;
   min-width: 120px;
 }
 
 .main__btn:hover {
-  background-color: #6aadad;
+  background-color: rgb(106, 173, 173);
 }
 
 .generate:disabled {
@@ -120,5 +120,5 @@ h1 {
 
 .footer {
   height: 120px;
-  background-color: grey;
+  background-color: rgb(128, 128, 128);
 }

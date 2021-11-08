@@ -13,11 +13,20 @@ function getRandomIntInclusive(min, max) {
 }
 
 generateBtn.addEventListener('click', function () {
-    const min = +minNumber.value;
-    const max = +maxNumber.value;
+    let min = +minNumber.value;
+    let max = +maxNumber.value;
 
     if (min === 0 && max === 0) {
         return;
+    }
+
+    if (min > max) {
+        let renameMax = min;
+        let renameMin = max;
+        max = renameMax;
+        min = renameMin;
+        minNumber.value = min;
+        maxNumber.value = max;
     }
 
     let range = getRandomIntInclusive(min, max);
